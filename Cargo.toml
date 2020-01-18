@@ -1,0 +1,21 @@
+[package]
+name = "things-rss"
+version = "0.1.0"
+authors = ["Zoran Zaric <zz@zoranzaric.de>"]
+edition = "2018"
+description = "Send new RSS items to your Things 3 inbox"
+categories = ["command-line-interface"]
+
+readme = "README.md"
+license = "MIT/Apache-2.0"
+homepage = "https://github.com/zoranzaric/things-rss"
+repository = "https://github.com/zoranzaric/things-rss.git"
+
+[dependencies]
+rss = { version = "1.8.0", features = ["from_url"] }
+lettre = "0.9"
+lettre_email = "0.9"
+rusqlite = "0.21.0"
+structopt = "0.3.7"
+toml = "0.5.5"
+serde = { version = "1", features = ["derive"] }
